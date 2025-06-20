@@ -1,0 +1,1053 @@
+@import "./_variable.scss";
+/*this is a variable file*/
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-BlackItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-BoldItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-Light.woff2") format("woff2"),
+    url("../../fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-ExtraBoldItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-Italic.woff2") format("woff2"),
+    url("../../fonts/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-ExtraLightItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-ExtraLight.woff2") format("woff2"),
+    url("../../fonts/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-ExtraBold.woff2") format("woff2"),
+    url("../../fonts/Poppins-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-MediumItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("Poppins-Thin.woff2") format("woff2"),
+    url("Poppins-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-ThinItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-LightItalic.woff2") format("woff2"),
+    url("../../fonts/Poppins-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src:
+    url("../../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  overflow-x: hidden;
+}
+
+.custom-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include md {
+    padding: 0 20px;
+  }
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #141414;
+  margin-bottom: 0;
+
+  @include lg {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 70px;
+  font-weight: 600;
+
+  @include lg {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @include md {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  @include sm {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.whats-app-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+}
+
+// --------------------
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60px;
+  background-color: $white;
+  padding: 0 5%;
+
+}
+
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+
+  .main-logo-img {
+    width: 120px;
+  }
+}
+
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-color;
+  text-decoration: none;
+  position: relative;
+}
+
+nav .links a:hover {
+  color: $green-2;
+}
+
+nav .links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $green-2;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav .links a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+  color: white;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: $Rustic-brown;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $white;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+
+  nav .links a {
+    font-size: 16px;
+  }
+
+  nav :checked~.links {
+    bottom: 0;
+  }
+
+  nav .icon-burger {
+    display: block;
+  }
+
+  nav :checked~.icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked~.icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav :checked~.icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+// -------------------------
+
+.hero-section {
+
+  .main-hero-section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images/main-backgrund-img.png');
+    background-size: cover;
+    background-position: center;
+
+    .hero-detail-section {
+      background-color: #f7f5f2bf;
+      margin-top: 100px;
+      padding: 24px;
+      border-radius: 24px;
+
+      .hero-heading {
+        text-align: center;
+        font-size: 80px;
+        line-height: 88px;
+        font-weight: 600;
+        color: $Rustic-brown;
+
+        @include lg {
+          font-size: 56px;
+          line-height: 72px;
+        }
+
+        @include md {
+          font-size: 48px;
+          line-height: 56px;
+        }
+
+        @include sm {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+
+      .hero-sub-heading {
+        text-align: center;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        color: $green-2;
+        padding: 12px;
+
+        @include lg {
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        @include md {
+          font-size: 20px;
+          line-height: 26px;
+        }
+
+        @include sm {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      .hero-title {
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+        color: $dark-brown;
+      }
+    }
+  }
+}
+
+.about-us-section {
+  padding: 80px 0;
+  background-color: $light-white;
+
+  .about-us-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include md {
+      flex-direction: column;
+    }
+
+    .about-information {
+      .about-heading {
+        color: $Rustic-brown;
+        margin-bottom: 0px;
+      }
+
+      .about-sub-heading {
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 500;
+        color: $green-2;
+        margin-bottom: 14px;
+
+        @include sm {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+
+      .about-pera {
+        color: $text-color;
+        max-width: 500px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .about-product-img {
+      min-height: 500px;
+      min-width: 500px;
+      max-height: 500px;
+      overflow: hidden;
+      border-radius: 12px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .about-img {
+        width: 100%;
+        max-height: 500px;
+      }
+
+      @include lg {
+        min-height: 300px;
+        min-width: 300px;
+        max-height: 300px;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+.our-story-section {
+  background-color: $Rustic-brown;
+  padding: 80px 0;
+
+  .our-story-details {
+    .story-heading {
+      color: $offwhite;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .story-pera {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: $offwhite;
+      text-align: center;
+
+      @include md {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      @include md {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.coconut-creativity-section {
+  padding: 80px 0;
+
+  .coconut-creativity-heading {
+    color: $Rustic-brown;
+    margin-bottom: 12px;
+  }
+
+  .coconut-creativity-sub-heading {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $green-2;
+    margin-bottom: 14px;
+
+    @include lg {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @include md {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    @include sm {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .coconuts_critivity-process {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    img {
+      border-radius: 12px;
+    }
+  }
+}
+
+.key-fector-section {
+  padding: 80px 0;
+  background-color: $offwhite;
+
+  .key-fector-heading {
+    color: $Rustic-brown;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .key-fector-cards {
+    .key-value-cards {
+      text-align: center;
+
+      .key-title {
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 500;
+        color: $dark-green;
+        margin-bottom: 10px;
+
+        @include md {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        @include sm {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+
+      .key-text {
+        color: $text-color;
+
+        @include sm {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+.what-we-offer-section {
+  padding: 80px 0;
+
+  .offer-heading {
+    color: $Rustic-brown;
+    text-align: center;
+  }
+
+  .offer-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    padding-bottom: 40px;
+
+  }
+
+  .what-we-offer-cards {
+    .offer-cards {
+      border-radius: 12px;
+      max-width: 290px;
+
+      .offer-c {
+        background-color: $offwhite;
+        padding: 12px;
+        height: 370px;
+        border-radius: 12px;
+        text-decoration: none;
+
+        .product-img {
+          width: 100%;
+          border-radius: 12px;
+          min-height: 200px;
+          max-height: 200px;
+          object-fit: cover;
+        }
+
+        .product-detail {
+          margin-top: 24px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 26px;
+          color: $Rustic-brown;
+        }
+
+        .product-detail-info {
+          font-size: 14px;
+          font-weight: 500;
+          color: $text-color;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.product-detail-section {
+  background-color: $dark-green;
+  padding: 80px 0;
+
+  .product-detail-heading {
+    color: $offwhite;
+    text-align: center;
+  }
+
+  .product-all-cards {
+    justify-content: center;
+
+    .product-card {
+      background-color: white;
+      margin: 12px;
+      padding: 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      max-width: 300px;
+
+      .product-image {
+        width: 100%;
+        border-radius: 12px;
+      }
+
+      .product-name {
+        font-size: 24px;
+        font-weight: 500px;
+        line-height: 30px;
+        color: $dark-green;
+      }
+
+      .product-text {
+        color: $dark-green;
+      }
+
+      @include sm {
+        padding: 12px;
+      }
+    }
+  }
+
+  .view-buttton {
+    max-width: fit-content;
+    padding: 8px 20px;
+    background-color: white;
+    color: $dark-green;
+    border: none;
+    border-radius: 12px;
+    margin: 0 auto;
+  }
+}
+
+.our-commitment-section {
+  padding: 80px 0;
+
+  .offer-heading {
+    color: $Rustic-brown;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .graphics-image {
+    max-width: 600px;
+    max-height: 400px;
+
+    img {
+      border-radius: 12px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .commitment-details {
+    .commitment-list {
+      color: $green-2;
+      align-items: center;
+      gap: 8px;
+      max-width: 600px;
+      margin: 20px;
+      list-style: circle;
+
+      img {
+        width: 30px;
+      }
+
+      .commitment-text {
+        color: $green-2;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.footer-section {
+  background-color: $dark-green;
+  padding: 40px 0;
+
+  .social-icon {
+    display: flex;
+
+    a {
+      padding: 0 6px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .footer-text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $offwhite;
+    margin: 0;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+//------------------about us page---------------------------
+
+.about_hero_section {
+  margin-top: 50px;
+  background-image: url('../../images/kerela-bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+  .about-hero {
+    text-align: center;
+    padding: 120px 0;
+    background-color: #00000069;
+
+    .about-page-heading {
+      font-size: 80px;
+      line-height: 88px;
+      color: $white;
+      font-weight: 600;
+
+      @include lg {
+        font-size: 48px;
+        line-height: 56px;
+      }
+    
+      @include md {
+        font-size: 40px;
+        line-height: 46px;
+      }
+    
+      @include sm {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+.product-information {
+  padding: 80px 0;
+
+  .product-details-pera {
+    text-align: center;
+    color: #141414;
+
+    span {
+      color: $green-2;
+      font-weight: 600;
+    }
+  }
+}
+
+
+//-----------------product-page----------------------------
+
+.product_hero_section {
+  margin-top: 50px;
+  background-image: url('../../images/product-g-img-pica.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+  .product-hero {
+    text-align: center;
+    padding: 120px 0;
+
+    .product-page-heading {
+      font-size: 80px;
+      line-height: 88px;
+      color: #6e3f26;
+      font-weight: 600;
+      background: white;
+      width: fit-content;
+      margin: 0 auto;
+
+      @include lg {
+        font-size: 48px;
+        line-height: 56px;
+      }
+    
+      @include md {
+        font-size: 40px;
+        line-height: 46px;
+      }
+    
+      @include sm {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+.product-detail-category {
+  padding: 30px 0;
+
+  .prodects-information {
+    .product-category-title {
+      font-size: 20px;
+      line-height: 26px;
+      color: $Rustic-brown;
+      font-weight: 600;
+    }
+
+    .product-cate-txt {
+      font-size: 12px;
+      color: $green-2;
+    }
+
+    .category-card {
+      margin-top: 20px;
+
+      .cat-cards {
+        .product-category-card {
+          // background-color: $offwhite;
+          border-radius: 8px;
+          padding: 12px;
+          height: 100%;
+          border: 1px solid #00000017;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px;
+
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          }
+
+          .product-img {
+            width: 100%;
+            height: 207px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+          }
+
+          .pr-name {
+            font-size: 18px;
+            color: $text-color;
+          }
+
+          .pr-text {
+            font-size: 12px;
+            color: $text-color;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tag-list {
+  width: 70rem;
+  max-width: 90vw;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 1rem 0;
+  position: relative;
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.loop-slider {
+  .inner {
+    display: flex;
+    width: fit-content;
+    animation-name: loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: var(--direction);
+    animation-duration: 20s;
+  }
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  span {
+    font-size: 1.2rem;
+    color: #64748b;
+  }
+
+  img {
+    height: 150px;
+  }
+}
+
+.fade {
+  pointer-events: none;
+  background: linear-gradient(90deg, #22291b, transparent 30%, transparent 70%, #22291b);
+  position: absolute;
+  inset: 0;
+  opacity: 1!important;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
